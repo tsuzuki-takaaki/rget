@@ -1,3 +1,11 @@
+use clap::Parser;
+use indicatif::{ ProgressBar, ProgressStyle };
+
+use crate::types::args::Args;
+
+mod types;
+
 fn main() {
-    println!("Hello, world!");
+  let args = Args::parse();
+  println!("{:?}", args);
 }
